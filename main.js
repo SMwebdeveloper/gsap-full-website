@@ -51,7 +51,8 @@ function section2() {
             innerHTML: "<i class='fa-solid fa-volume-high'></i>",
             fontSize: "25px",
             color: "black",
-            margin: "20px"
+            margin: "20px",
+            background:"white"
         })
     })
 
@@ -82,3 +83,18 @@ function section2() {
 }
 
 section2()
+
+// section 3 animation
+function section3 () {
+  const cursor = document.querySelector(".cursor")
+  const sectionThree = document.querySelector('.section3')
+
+  sectionThree.addEventListener('mouseenter', () => {
+    gsap.to(cursor, {
+        background:"#0f0f0f"
+    })
+  })
+}
+
+section3()
+
